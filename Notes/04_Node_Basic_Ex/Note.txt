@@ -1,0 +1,5 @@
+-> QuickStart: https://grpc.io/docs/languages/node/quickstart/
+-> Example: D:\Programming\RPC\Notes\04_Node_Quick_Start\grpc-node\examples\helloworld\dynamic_codegen
+    -> https://github.com/grpc/grpc-node/tree/master/examples/routeguide/static_codegen
+-> TODO example: https://github.com/hnasr/javascript_playground/tree/master/grpc-demo
+-> Basic: https://grpc.io/docs/languages/node/basics/

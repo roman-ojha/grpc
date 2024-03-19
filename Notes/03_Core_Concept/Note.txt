@@ -1,7 +1,7 @@
 *) Overview:
     -> https://grpc.io/docs/what-is-grpc/core-concepts/#overview
     *) Service definition:
-        -> Like many RPC systems, gRPC is based around the idea of defining a service, specifying the methods that can be called remotely with their parameters and return types. By default, gRPC uses protocol buffers as the Interface Definition Language (IDL) for describing both the service interface and the structure of the payload messages. It is possible to use other alternatives if desired.
+        
         
             service HelloService {
                 rpc SayHello (HelloRequest) returns (HelloResponse);
@@ -19,7 +19,7 @@
 
             1) Unary RPCs where the client sends a single request to the server and gets a single response back, just like a normal function call.
                 -> rpc SayHello(HelloRequest) returns (HelloResponse);
-            2) Server streaming RPCs where the client sends a request to the server and gets a stream to read a sequence of messages back. The client reads from the returned stream until there are no more messages. gRPC guarantees message ordering within an individual RPC call.
+            2) Server streaming RPCs where the c-> Like many RPC systems, gRPC is based around the idea of defining a service, specifying the methods that can be called remotely with their parameters and return types. By default, gRPC uses protocol buffers as the Interface Definition Language (IDL) for describing both the service interface and the structure of the payload messages. It is possible to use other alternatives if desired.lient sends a request to the server and gets a stream to read a sequence of messages back. The client reads from the returned stream until there are no more messages. gRPC guarantees message ordering within an individual RPC call.
                 -> rpc LotsOfReplies(HelloRequest) returns (stream HelloResponse);
             3) Client streaming RPCs where the client writes a sequence of messages and sends them to the server, again using a provided stream. Once the client has finished writing the messages, it waits for the server to read them and return its response. Again gRPC guarantees message ordering within an individual RPC call.
                 -> rpc LotsOfGreetings(stream HelloRequest) returns (HelloResponse);
