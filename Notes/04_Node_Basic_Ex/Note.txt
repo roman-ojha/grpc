@@ -3,3 +3,4 @@
     -> https://github.com/grpc/grpc-node/tree/master/examples/routeguide/static_codegen
 -> TODO example: https://github.com/hnasr/javascript_playground/tree/master/grpc-demo
 -> Basic: https://grpc.io/docs/languages/node/basics/
+-> TS-Node-GRPC: https://github.com/floydjones1/ts-node-grpc
